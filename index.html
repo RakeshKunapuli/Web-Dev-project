@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Premier Leauge </title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/6f5013579e.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+
+  </head>
+<body>
+    <header>
+        <div id="head-container">
+            <div id="head-right">
+                <img src="https://www.iplt20.com/assets/images/ipl-og-image-new.jpg" alt="logo here" id="logo">
+               <a href="./index.html"> <button id="home-button" class="add-button">Home</button></a>
+            </div>
+           <div id="head-left">
+
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Enter Team Name">
+                <div class="autocom-box">
+
+                </div>
+                <div  class="icon"><i class="fas fa-search"></i></div>
+              </div>
+                <button id="add-team-button" class="add-button" onclick="addteamclicked()">
+                    Add Team
+                </button>
+                <button id="add-player-button" class="add-button" onclick="addPlayerClicked()">
+                    Add Player
+                </button>
+           </div>
+        </div>
+    </header>
+       <!-- image slider start sk -->
+
+
+  <div class="slider">
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide">
+        <img src="https://assets.bcci.tv/bcci/photos/1046/ba392750-8285-48a0-aa96-6cb44cc71690.jpg" alt="">
+      </div>
+        <div class="slide first">
+          <img src="https://assets.bcci.tv/bcci/photos/1046/3461ee9f-a548-4612-8456-42ab755c2c6f.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.insidesport.in/wp-content/uploads/2019/03/Election-and-World-Cup-options-leave-IPL.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.bcci.tv/bcci/photos/856/f5a03a54-7d42-4b0d-a383-73532bdabce7.jpg" alt="">
+        </div>
+
+    
+  </div>
+
+   <h1 id="slogan">2023 IPL TEAMS</h1>
+     <div id="first-main">
+
+       <div id="container_teams">
+
+       </div>
+
+     </div>
+    
+
+
+
+
+    <script src="./index.js"></script>
+
+
+</body>
+</html>

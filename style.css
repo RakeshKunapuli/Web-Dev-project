@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#logo {
+  width: 120px;
+  background-color: #efefef;
+}
+#head-container,
+#head-left {
+  display: flex;
+}
+#head-container {
+  margin-top: -50px;
+  width: 100%;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+  position: fixed;
+  height: 70px;
+  position: fixed;
+  z-index: 2;
+}
+#head-con2 {
+  margin-top: -100px;
+  width: 100%;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+  position: fixed;
+  height: 70px;
+
+  background: #1e3c72;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safri 7+ */
+}
+
+#head-con3 {
+  margin-top: -70px;
+  width: 100%;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+  position: fixed;
+  height: 70px;
+  background: #1e3c72;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 2;
+}
+#head-right {
+  display: flex;
+  width: 55%;
+  background: #1e3c72;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  z-index: 2;
+}
+#head-left {
+  width: 45%;
+  background: #1e3c72;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#home-button {
+  margin-top: 10px;
+  width: 10%;
+  margin-left: 2%;
+  height: 50px;
+  width: 100px;
+  background-color: #fcfdff;
+  border: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 14px;
+  color: #0c0c0c;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#home-button:hover {
+  box-shadow: 1px 1px 5px #5243c0, -0.1px -0.1px 10px rgb(165, 161, 161);
+  background-color: #fcfdffab;
+  cursor: pointer;
+}
+.add-button {
+  cursor: pointer;
+  background-color: rgb(78, 155, 123);
+  border: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: #fff8f8;
+  padding: 5px;
+  margin: 10px;
+}
+.add-button:hover {
+  box-shadow: 0px 0px 5px #5243c0, -0.1px -0.1px 10px rgb(165, 161, 161);
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgba(0, 255, 149, 0.63);
+}
+
+.search-input {
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #fff;
+  width: 55%;
+  border-radius: 5px;
+  position: relative;
+  height: 48px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+.search-input input {
+  height: 48px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 12px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+}
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.search-input.active .autocom-box li {
+  display: block;
+  background-color: white;
+  box-shadow: 1px 1px 2px gray;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+/* image slider start here */
+
+
+.slider {
+  margin-top: 50px !important;
+  padding-top: 20px;
+  z-index: -1;
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+   height: auto;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.5s;
+  object-fit:cover;
+}
+
+.slide img {
+  width: 100%;
+  height: 90%;
+  z-index: -4;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: 0.8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.1;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: gray;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 27vw;
+}
+
+.navigation-auto div {
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: gray;
+  color: blue;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: gray;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: gray;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: gray;
+}
+.slides input {
+  height: 20px;
+  width: 20px;
+}
+.navigation-auto div {
+  height: -2px;
+}
+
+/* image slider end here */
+
+/* card grid goes here */
+#container_teams {
+  background-color: #dddddd;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 10%;
+  background-image: url("https://www.shutterstock.com/image-vector/shiny-golden-trophy-bat-stumps-260nw-2277540561.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.minibox {
+  width: 23.2%;
+  height: 300px;
+  margin: 10px;
+  background-color: #4267b0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid  #fafafa; 
+  text-align: center;
+  
+}
+.minibox {
+  margin-bottom: 120px;
+  color: #1c2125;  /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 370px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+  /* background-image: linear-gradient(rgb(28, 28, 28) 0%, rgb(11, 73, 115) 100%) ; */
+  border-radius: 15px;
+}
+.mn2{
+  background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+   color: white;
+}
+.minibox:hover {
+  box-shadow: rgba(245, 243, 243, 0.7) 0px 2px 10px 5px;
+  margin-top: 3px !important;
+
+  transition: 0.2s ease-in-out;
+}
+.mainimage {
+  width: 90%;
+}
+#first-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#table-team td {
+  border: 1px solid black;
+  width: 30vw;
+  padding-left: 10vw;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#table-team table {
+  margin-left: 20vw;
+}
+.team-page-icon {
+  width: 100px;
+}
+#player-details-con {
+  /* display: flex; */
+  width: 65%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-player-det td {
+  border: 1px solid black;
+  width: 30vw;
+  padding-left: 10vw;
+}
+
+#player_detail-img img {
+  width: 35%;
+  margin: 5px 0 -10px 0;
+  margin-left: 19vw;
+}
+#player-details-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://exchange4media.gumlet.com/news-photo/125727-IPL.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#add-team {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-image: url("https://d1p3gr8c0wxust.cloudfront.net/assets/mens-ipl/desktopTitleBackground.png");
+}
+#addteamform {
+  background-color: #095a6e;
+  /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+  border-radius: 20px;
+  margin: 10px 0;
+  width: 60%;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 60px 0;
+  
+}
+#addteamform p {
+  font-size: 24px;
+  padding: 20px 0 0 0;
+  font-weight: 500;
+  color: white;
+}
+#addteamform input {
+  width: 70%;
+  height: 40px;
+}
+#addteamform select {
+  width: 70%;
+  height: 40px;
+}
+
+#addteamform button {
+  display: block;
+  font-size: 16px;
+  margin-top: 50px;
+  font-weight: 600;
+  color: #fff;
+  padding: 16px 30px;
+  letter-spacing: 2px;
+  background-color: #001f3f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#addteamform button:hover {
+  box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+}
+#slogan {
+  justify-content: center;
+  display: flex;
+  /* margin-top: 50px; */
+  padding: 20px 0;
+  width: 100%;
+  background-color: #19426e;
+  color: white;
+  /* background-image: linear-gradient(90deg, #67229c 0%, #de354f 100%); */
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+#slogan2 {
+  color: black;
+  justify-content: center;
+  display: flex;
+  margin-top: -30px;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #19426e;
+  color: white;
+  position: relative;
+  z-index: 1;
+  scroll-behavior: smooth;
+  /* background-image: linear-gradient(90deg, #67229c 0%, #de354f 100%); */
+  cursor: pointer;
+}
+#slogan3 {
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #19426e;
+  color: white;
+  /* background-image: linear-gradient(90deg, #67229c 0%, #de354f 100%); */
+
+  cursor: pointer;
+}
+#slogan4 {
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #19426e;
+  color: white;
+  /* background-image: linear-gradient(90deg, #67229c 0%, #de354f 100%); */
+  cursor: pointer;
+}
+#head-con4 {
+  margin-top: -70px;
+  width: 100%;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+  position: fixed;
+  height: 70px;
+
+  background: #1e3c72;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.dataodcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:transparent;
+  padding: 0px 0;
+  width: 100%;
+  height: auto;
+  transform: translate(0px, 63px);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position:relative;
+  bottom: 15px;
+}
+footer {
+  color: white;
+  background-color: blue;
+
+  padding: 50px;
+}
+#table-team {
+  width: 100%;
+  border: 1px solid black;
+  background-image: url("https://img.onmanorama.com/content/dam/mm/en/sports/cricket/images/2022/2/11/ipl-logo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#table-team table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+#table-team td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+.player-detail td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  background-color: #001f3f;
+  color: white;
+}
+.player-detail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  
+background: linear-gradient(to right, #1F1C18, #8E0E00); 
+}
+
+.text1,
+.text2 {
+  margin: 0px;
+  font-weight: 600;
+}
+
+#team0{
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#team2{
+  background-color:#dd1818;
+}
+#team3{
+  background: -webkit-linear-gradient(50deg,#0f0c29,#F9E278);
+  color: white;
+}
+
+#team4{
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+#team5{
+  background-color: #23344D;color: white;
+}
+#team7{
+  background-color: #ff6a00;
+  color: black;
+  -webkit-text-stroke: white;
+}
+#team8{
+  background-color: #DD1F2D;
+}
+#team1{
+  background-color: #ffc500;
+}
+#team9{
+background:linear-gradient(to bottom, white,blue);
+
+color: white;
+}
+#team6{
+  background-color: pink;
+}
