@@ -22,12 +22,10 @@ $("#addteamform").submit(function (e) {
 
         "teamIcon": $("#inp3").val(),
         "WonCount": $("#inp4").val(),
-
-
     }
 
    localTeam.push(addData);
    localStorage.setItem("teamArray", JSON.stringify(localTeam)); 
-
-   location.href = `./teams.html?name=${addData.sName}`;
+   alert(`Added ${addData.teamFullName} Succesfully`)
+   window.location.href = `./teams.html?name=${addData.sName}`;
 })

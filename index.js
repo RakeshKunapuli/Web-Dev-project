@@ -535,8 +535,6 @@ var teamData = [
 
 ];
 
-
-
 var addteamclicked=()=>{
     window.open("./addTeam.html","_self")
 }

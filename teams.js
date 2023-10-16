@@ -1,9 +1,6 @@
 let urlData = location.href;
 let newUrl = new URL(urlData);
 let teamFull = newUrl.searchParams.get("name");
-// console.log(urlData);
-
-// console.log(teamFull);
 
 
 // geting data from local storage
@@ -13,12 +10,9 @@ playersDetails = JSON.parse(localStorage.getItem("playerArray"));
 var teamMainBox=document.getElementById("container_teams")
 var tableTeam=document.getElementById("table-team")
 
+
+
 var cnt=0;
-
-
-
-
-
 for(var i=0;i<playersDetails.length;i++){
   console.log(playersDetails[i]);
 if(teamFull==playersDetails[i].from){
@@ -45,10 +39,11 @@ teamMainBox.innerHTML+=`
 </div>
 `}
 
-function makethisinclick(res){
-    window.open(`./playerdetails.html?name=${res}`,"_self")
-   }
+function makethisinclick(res) {
+  window.location.href = `./playerdetails.html?name=${res}`;
+}
 
+  
 }
 // search for top batsman
 var topBatsman=""
@@ -155,16 +150,3 @@ teamsDetails.map((item)=>{
 }
 
 })
-
-
-
-
-
-// {
-//   "id": 0,
-//   "teamFullName": "Mumbai Indians",
-//   "sName": "MI",
-//   "fullSname":"MI (Mumbai Indians)" ,
-//   "teamIcon": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/Logos/Roundbig/MIroundbig.png",
-//   "WonCount": 5,
-// }, 
