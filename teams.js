@@ -40,7 +40,7 @@ teamMainBox.innerHTML+=`
 `}
 
 function makethisinclick(res) {
-  window.location.open(`./playerdetails.html?name=${res}`)
+  window.location.open(`./playerdetails.html?name=${res}`,"_self")
 }
 
   
