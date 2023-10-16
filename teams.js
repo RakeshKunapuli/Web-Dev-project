@@ -27,7 +27,7 @@ var currentP=playersDetails[i].playerName
 
 cnt++
 teamMainBox.innerHTML+=`
-<div    onclick="makethisinclick('${currentP}')"    class="minibox mn2">
+<div onclick="makethisinclick('${currentP}')"    class="minibox mn2">
 <img src="${playersDetails[i].playerImg}" class="mainimage" alt=""/> 
  
   <p class="text1"> ${playersDetails[i].playerName}   </p>
@@ -40,7 +40,7 @@ teamMainBox.innerHTML+=`
 `}
 
 function makethisinclick(res) {
-  window.location.open(`./playerdetails.html?name=${res}`,"_self")
+  window.location.assign(`./playerdetails.html?name=${res}`,"_self")
 }
 
   
